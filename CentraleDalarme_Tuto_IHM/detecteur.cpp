@@ -6,6 +6,7 @@ Detecteur::Detecteur(QWidget *parent)
     , ui(new Ui::Detecteur)
 {
     ui->setupUi(this);
+    setWindowTitle("Détecteur");
 }
 
 Detecteur::~Detecteur()
@@ -15,9 +16,7 @@ Detecteur::~Detecteur()
 
 void Detecteur::on_pushButtonIntrus_clicked()
 {
-    QString texteBouton = ui->pushButtonIntrus->text();
     QMessageBox messageMarche;
-    messageMarche.setText("Il y a un intrus");
+    messageMarche.setText("Intrus détecté");
     messageMarche.exec();
 }
-

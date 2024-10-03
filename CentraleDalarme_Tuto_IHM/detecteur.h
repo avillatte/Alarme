@@ -1,7 +1,9 @@
 #ifndef DETECTEUR_H
 #define DETECTEUR_H
-#include <QMessageBox>
+
 #include <QDialog>
+#include <QMessageBox>
+#include <QTimer>
 
 namespace Ui {
 class Detecteur;
@@ -16,7 +18,7 @@ public:
     ~Detecteur();
 
 private slots:
-    void on_pushButtonIntrus_clicked();
+   virtual void on_pushButtonIntrus_clicked();
 
 private:
     Ui::Detecteur *ui;
