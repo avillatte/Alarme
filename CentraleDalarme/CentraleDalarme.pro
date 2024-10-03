@@ -10,14 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     detecteur.cpp \
-    detecteurtempo.cpp \
+    detecteurtemporise.cpp \
     main.cpp \
     clavier.cpp
 
 HEADERS += \
     clavier.h \
     detecteur.h \
-    detecteurtempo.h
+    detecteurtemporise.h
 
 FORMS += \
     clavier.ui \

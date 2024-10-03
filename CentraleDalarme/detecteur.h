@@ -1,8 +1,8 @@
 #ifndef DETECTEUR_H
 #define DETECTEUR_H
-#include <QMessageBox>
-#include <QDialog>
 
+#include <QDialog>
+#include<QMessageBox>
 namespace Ui {
 class Detecteur;
 }
@@ -15,8 +15,8 @@ public:
     explicit Detecteur(QWidget *parent = nullptr);
     ~Detecteur();
 
-private slots:
-    void on_pushButtonIntrus_clicked();
+protected slots:
+    virtual void on_pushButton_clicked();
 
 private:
     Ui::Detecteur *ui;
